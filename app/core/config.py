@@ -4,3 +4,4 @@ load_dotenv()
 
 MONGODB_URI=environ.get("MONGODB_URI")
 OPENAI_API_KEY = environ.get("OPENAI_API_KEY")
+DATABASE_NAME = environ.get("DATABASE_NAME")
