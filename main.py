@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers.actor_routes import router as actor_routes
-from app.routers.ai_routes import router as ai_routes
-from app.services.database import client
+from app.actors.actor_routes import router as actor_routes
+from app.llm.ai_routes import router as ai_routes
+from app.core.database import client
 from app.core.config import DATABASE_NAME
 
 app = FastAPI()

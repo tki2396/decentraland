@@ -6,6 +6,7 @@ class Actor(BaseModel):
     type: str = "Person"
     inbox: str
     outbox: str
+    username: str
     # ... any other actor fields
 
 class Activity(BaseModel):

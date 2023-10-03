@@ -5,3 +5,4 @@ client = AsyncIOMotorClient(MONGODB_URI)
 database = client.get_database('activitypub')  # Replace 'mydatabase' with your database name
 
 user_collection = database.get_collection("users")
+activity_collection = database.get_collection("activities")
